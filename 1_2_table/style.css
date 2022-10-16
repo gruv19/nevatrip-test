@@ -35,3 +35,34 @@ html {
     padding: 20px 10px;
   }
 }
+
+.table-continer {
+  min-width: 320px;
+  width: 100%;
+  max-width: 990px;
+  overflow-x: scroll;
+}
+
+.table-scroll {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.table-scroll__cell {
+  width: 25%;
+  min-width: 181px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 15px 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .table-continer {
+    overflow-x: auto;
+  }
+  .table-scroll__cell {
+    min-width: unset;
+  }
+}
