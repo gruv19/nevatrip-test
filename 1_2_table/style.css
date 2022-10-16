@@ -66,3 +66,72 @@ html {
     min-width: unset;
   }
 }
+
+.table-grid {
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "A1"
+    "B1"
+    "C1"
+    "D1"
+    "E1"
+    "A2"
+    "B2"
+    "C2"
+    "D2"
+    "E2"
+    "A3"
+    "B3"
+    "C3"
+    "D3"
+    "E3"
+    "A4"
+    "B4"
+    "C4"
+    "D4"
+    "E4";
+}
+
+.table-grid__cell {
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px 5px;
+}
+
+.table-grid__cell--head {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .table-grid {
+    grid-template-areas:
+      "A1 A2"
+      "B1 B2"
+      "C1 C2"
+      "D1 D2"
+      "E1 E2"
+      "A3 A4"
+      "B3 B4"
+      "C3 C4"
+      "D3 D4"
+      "E3 E4";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .table-grid {
+    display: grid;
+    grid-template-areas:
+    "A1 A2 A3 A4"
+    "B1 B2 B3 B4"
+    "C1 C2 C3 C4"
+    "D1 D2 D3 D4"
+    "E1 E2 E3 E4";
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
