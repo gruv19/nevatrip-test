@@ -27,4 +27,4 @@
 | Cell 2   | Cell 2   |
 
 ## Демонстрация
-Готовый результат можно посмотреть [ТУТ](https://github.com/gruv19/nevatrip-table) 
+Готовый результат можно посмотреть [ТУТ](https://gruv19.github.io/nevatrip-table/) 
