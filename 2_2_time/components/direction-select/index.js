@@ -1,5 +1,4 @@
 import select from '../select';
-import './direction-select.scss';
 
 function directionSelect() {
   const selectData = { 

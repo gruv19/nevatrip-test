@@ -1,5 +1,4 @@
 import select from '../select';
-import './time-forward-select.scss';
 
 import { prepareTime } from '../../utils';
 
