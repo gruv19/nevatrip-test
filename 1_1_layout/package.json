@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/nevatrip-layout/",
+    "build": "vite build",
+    "ghpbuild": "vite build --base=/nevatrip-layout/",
     "preview": "vite preview"
   },
   "devDependencies": {
